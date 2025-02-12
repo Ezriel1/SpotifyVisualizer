@@ -9,7 +9,8 @@
     AAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAhMRoAAAAAABkgGQAUExkAYdkeABQUGQBh2h4ARpUcAFzNHgBf1B4AExA
     ZAFnFHQAzZRsAYNceAAAAAAAAAAAAERERERERERERER3d3dEREREd3d3d3dEREd3d3d3d3RER3d3d3d3dER3dWd3
     FXd3RHd3bIE3Y3dEd3X3d01Xd0R3dVVVa3d3RHd3d3d1lXdEd1VVVVVXd0RHd3d3d3d0REd3d3d3d3RERHd3d3d3
-    RERERHd3d0RERERERERERERH//wAA+B8AAOAHAADAAwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAMADAADAAwAA4AcAAPgfAAD//wAA"
+    RERERHd3d0RERERERERERERH//wAA+B8AAOAHAADAAwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAMADAAD
+    AAwAA4AcAAPgfAAD//wAA"
       rel="icon"
       type="image/x-icon"
     />
@@ -20,7 +21,6 @@
       <div>
         <h1 class="title">Spotify Data Visualizer</h1>
       </div>
-
       <img src="./logo.png" alt="Spotify Logo" />
     </header>
 
@@ -29,36 +29,59 @@
         <h2>About</h2>
         <p>
           Welcome to the <b>Spotify Data Visualizer</b>. This project takes a
-          large data set of music and organizes it into categories that you can
-          select
+          large data set of music information and organizes it into categories
+          you can select
         </p>
       </div>
-
       <div>
         <h2>Visualizations</h2>
         <ul>
           <li>Most Common Genre (Bar Graph)</li>
-          <li>Most Avergae Year Song Release (Pie Chart)</li>
-          <li>Loudest Song in Decibles (Linear graph)</li>
+          <li>Most Average Year Song Release (Pie Chart)</li>
+          <li>Loudest song in Decibles (Linear Graph)</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="result-section">
+      <div id="result-container">
+        <h2 id="result">Result</h2>
+        <div class="button-container">
+          <button class="spotify-button result-button">
+            Most Common Genre
+          </button>
+          <button class="spotify-button result-button">
+            Year Song Released
+          </button>
+          <button class="spotify-button result-button">Loudest Song</button>
+          <button class="spotify-button resutl-button">Search</button>
+        </div>
+
+        <div class="result-card" id="result-card">
+          <div class="result-content">
+            <p class="result-intro-text">
+              Select a category and chart type to visualize data.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer>
       <ul>
         <li>
-          <a
-            href="https://www.linkedin.com/in/daniel-ek-1b52093a/?originalSubdomain=se"
-            >Linkedin</a
-          >
+          <a href="https://www.linkedin.com/">LinkedIn</a>
         </li>
         <li>
-          <a href="https://github.com/Ezriel1">Github</a>
+          <a href="https://github.com/Roseline-Projects">Github</a>
         </li>
         <li>
-          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.instagram.com/barnesandnoble/">Instagram</a>
         </li>
       </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
